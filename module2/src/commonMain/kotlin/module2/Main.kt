@@ -5,10 +5,10 @@ import module1.Response
 
 fun doStuff(response: Response) {
     if (response.data != null) {
-        println(response.data!!)
+        doSomethingWithNonNullable(response.data!!)
     }
 }
 
-fun print(data: Data) {
+fun doSomethingWithNonNullable(data: Data) {
     print(data)
 }
